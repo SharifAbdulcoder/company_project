@@ -1,0 +1,21 @@
+# resource "aws_vpc" "magic8ball" {
+#   cidr_block = "10.0.0.0/16"
+# }
+#
+# resource "aws_subnet" "magic8ball" {
+#   vpc_id     = "${aws_vpc.magic8ball.id}"
+#   cidr_block = "10.0.1.0/24"
+# }
+#
+# resource "aws_internet_gateway" "magic8ball" {
+#   vpc_id = "${aws_vpc.magic8ball.id}"
+# }
+#
+# resource "aws_route_table" "magic8ball" {
+#   vpc_id = "${aws_vpc.magic8ball.id}"
+# }
+#
+# resource "aws_route_table_association" "magic8ball" {
+#   subnet_id      = "${aws_subnet.magic8ball.id}"
+#   route_table_id = "${aws_route_table.magic8ball.id}"
+# }
